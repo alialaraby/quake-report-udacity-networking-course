@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <TextView
+        android:background="@drawable/magnitude_circle"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/magnitude_list_item"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="1.2"/>
+    <TextView
+        android:id="@+id/location_offset_list_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:layout_toRightOf="@id/magnitude_list_item"
+        android:layout_toLeftOf="@id/date_time_layout"
+        android:text="location offset"/>
+    <TextView
+        android:id="@+id/primary_location_list_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@id/magnitude_list_item"
+        android:layout_toLeftOf="@id/date_time_layout"
+        android:layout_below="@id/location_offset_list_item"
+        android:text="primary location"/>
+
+    <LinearLayout
+        android:id="@+id/date_time_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical"
+            android:text="date"/>
+        <TextView
+            android:layout_below="@id/date_list_item"
+            android:id="@+id/time_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical"
+            android:text="time"/>
+    </LinearLayout>
+
+</RelativeLayout>
